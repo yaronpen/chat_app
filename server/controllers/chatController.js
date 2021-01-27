@@ -2,11 +2,11 @@ const { isRealString } = require('../utils/isRealString')
 const { generateMessage } = require('../utils/message')
 
 class ChatController {
-  constructor (io, socket, users, operations) {
+  constructor (io, socket, users/*, operations*/) {
     this.io = io
     this.socket = socket
     this.users = users
-    this.operations = operations
+    // this.operations = operations
   }
 
   userJoin (params, callback) {
@@ -30,7 +30,7 @@ class ChatController {
       const user = this.users.getUser(this.socket.id)
       if (user && isRealString(input.message)) {
         const message = generateMessage(user.name, input.message)
-        this.operations.save(message)
+        // this.operations.save(message)
         this.io.to(user.room).emit('message', message)
       }
     })
