@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h3>Chat App</h3>
+      <span class="leavebutton"><button type="button" name="leaveButton">Leave chat</button></span>
+    </div>
+    <div class="chat">
+      <div class="chat__sidebar">
+        <h3>Participants</h3>
+        <div class="names"></div>
+      </div>
+      <div class="chat__messages messages chat__main c">
+        <div class="outputMessages message"></div>
+      </div>
+    </div>
+    <div class="chat__footer chat">
+      <form class="chat__footer" id="form" action="">
+        <input class="submit" autocomplete="off" />
+        <button class="submit">Send</button>
+      </form>
+    </div>
+    <script src="/src/helpers.js"></script>
+    <script src="src/chatActions.js"></script>
+    <script src="/src/chat.js"></script>
+  </body>
+</html>

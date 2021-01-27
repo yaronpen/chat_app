@@ -1,0 +1,30 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "A chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [],
+  "author": "Yaron Pentchak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
+    "socket.io": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7"
+  }
+}
