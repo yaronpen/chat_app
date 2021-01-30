@@ -3,7 +3,6 @@ require('module-alias/register')
 
 const path = require('path')
 const { IO } = require('./io')
-// const { InnerExpress } = require('./utils/innerexpress')
 const { InnerExpress } = require('@innerExpress')
 
 

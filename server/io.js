@@ -1,9 +1,7 @@
 
 const socketIO = require('socket.io')
 // const { DBOperations } = require('./utils/dboperations')
-// const { ChatController } = require('./controllers/ChatController')
 const { ChatController } = require('@chatController')
-// const { Users } = require('./utils/users')
 const { Users } = require('@users')
 
 class IO {
