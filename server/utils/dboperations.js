@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
-const config = require('../config/config.js').get(null)
-const ChatRecord = require('../models/chatRecord')
+// const config = require('../config/config.js').get(null)
+const config = require('@config').get(null)
+// const ChatRecord = require('../models/chatRecord')
+const ChatRecord = require('@chatRecord')
 
 class DBOperations {
   constructor () {

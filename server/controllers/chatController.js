@@ -1,5 +1,7 @@
-const { isRealString } = require('../utils/isRealString')
-const { generateMessage } = require('../utils/message')
+// const { isRealString } = require('../utils/isRealString')
+const { isRealString } = require('@stringValiadtion')
+// const { generateMessage } = require('../utils/message')
+const { generateMessage } = require('@message')
 
 class ChatController {
   constructor (io, socket, users/*, operations*/) {

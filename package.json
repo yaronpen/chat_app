@@ -2,7 +2,7 @@
   "name": "chat_app",
   "version": "1.0.0",
   "description": "A chat app",
-  "main": "index.js",
+  "main": "/server/server.js",
   "scripts": {
     "test": "mocha",
     "start": "node server/server.js",
@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.11.13",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.11.14",
     "socket.io": "^3.1.0"
   },
   "devDependencies": {
@@ -26,5 +27,15 @@
     "eslint-plugin-promise": "^4.2.1",
     "mocha": "^8.2.1",
     "nodemon": "^2.0.7"
+  },
+  "_moduleAliases": {
+    "@chatController": "server/controllers/chatController.js",
+    "@innerExpress": "server/utils/innerexpress.js",
+    "@users": "server/utils/users.js",
+    "@stringValiadtion": "server/utils/isRealString",
+    "@message": "server/utils/message",
+    "@config": "server/config/config.js",
+    "@chatRecord": "server/models/chatRecord"
   }
+
 }

@@ -1,7 +1,11 @@
 
+require('module-alias/register')
+
 const path = require('path')
 const { IO } = require('./io')
-const { InnerExpress } = require('./utils/innerexpress')
+// const { InnerExpress } = require('./utils/innerexpress')
+const { InnerExpress } = require('@innerExpress')
+
 
 const port = process.env.PORT || 3000
 const publicPath = path.join(__dirname, '/../public')
